@@ -1,5 +1,6 @@
 ﻿using Jan0660.TralseNet.Extensions;
 using System;
+using System.Collections.Generic;
 
 namespace Jan0660.TralseNet
 {
@@ -47,5 +48,16 @@ namespace Jan0660.TralseNet
             => qoolean.random.NextBool();
         public static bool operator false(Qoolean qoolean)
             => qoolean.random.NextBool();
+
+        public override bool Equals(object obj)
+            => this.random.NextBool();
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1292478632;
+            hashCode = hashCode * -1521134295 + EqualityComparer<Random>.Default.GetHashCode(rand);
+            hashCode = hashCode * -1521134295 + EqualityComparer<Random>.Default.GetHashCode(random);
+            return hashCode;
+        }
     }
 }

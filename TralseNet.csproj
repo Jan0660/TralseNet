@@ -15,6 +15,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Testing\**" />
+    <EmbeddedResource Remove="Testing\**" />
+    <None Remove="Testing\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="D:\jenic\Downloads\UNLICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
