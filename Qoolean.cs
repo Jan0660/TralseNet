@@ -48,7 +48,8 @@ namespace Jan0660.TralseNet
             => qoolean.random.NextBool();
         public static bool operator false(Qoolean qoolean)
             => qoolean.random.NextBool();
-
+        public static implicit operator bool(Qoolean qool) => qool.random.NextBool();
+        public static implicit operator Qoolean(bool b) => new Qoolean();
         public override bool Equals(object obj)
             => this.random.NextBool();
         public override string ToString()

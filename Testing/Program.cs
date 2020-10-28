@@ -12,6 +12,10 @@ namespace Testing
                 //Qoolean qool = new Qoolean();
                 Qoolean qool;
                 Qoolean qool2;
+                if (qool)
+                {
+                    Qoolean q = true;
+                }
                 if (false | qool2)
                     Console.WriteLine("qool true");
                 else
