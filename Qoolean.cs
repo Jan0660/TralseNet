@@ -51,6 +51,10 @@ namespace Jan0660.TralseNet
 
         public override bool Equals(object obj)
             => this.random.NextBool();
+        public override string ToString()
+        {
+            return "Tralse";
+        }
 
         public override int GetHashCode()
         {
