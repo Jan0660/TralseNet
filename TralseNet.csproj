@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>Jan0660.TralseNet</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Authors>Jan0660</Authors>
     <Description>for when you want a boolean to be false and true at the same time (basically just an extension method to Random with extra steps)</Description>
-    <PackageLicenseFile>UNLICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/Jan0660/TralseNet</RepositoryUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageReleaseNotes>override .ToString to just return "Tralse" and add implicit bool conversion</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,10 +20,7 @@
     <Compile Remove="Testing\**" />
     <EmbeddedResource Remove="Testing\**" />
     <None Remove="Testing\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="D:\jenic\Downloads\UNLICENSE">
+    <None Include="LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
